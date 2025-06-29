@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("YfEKGfqk0iu3U9f6a"); // Replace with your EmailJS public key
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_smejsya", "template_ux4m82k", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+      }, (error) => {
+        console.error("FAILED...", error);
+        alert("Message failed to send.");
+      });
+  });
+</script>
+
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Miras
+        <span>Alikhanov</span></a>
+
+        <i class='bx  bx-menu' id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Miras</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Software developer from Kazakhstan, who finished a Bachelor Degree in the field of Computer Science at Czech University of Life Sciences Prague</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/miras-alikhanov-88a2591b3/"><i class='bxr  bx-link'></i> </a>
+                <a href="https://github.com/Miras2001"><i class='bxr  bx-code-alt'  ></i> </a>
+                
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+            <div class="home-img">
+                <img src="img2.jpeg" alt="">
+            </div>
+        
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p>I completed my high school education in Astana, Kazakhstan. During this time, I developed a strong interest in technology and problem-solving. I also built a solid foundation in mathematics and computer science</p>
+                    </div>
+            </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>University</h3>
+                        <p>In 2022, I began my Bachelor’s degree in Computer Science at CULS Prague. I focused on programming, databases, and data analysis. I also gained hands-on experience through coursework and team projects</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Internship</h3>
+                        <p>I worked as an intern at Astana Hub after my second year of university. During this 3-month internship, I contributed to frontend development using JavaScript, React, and MySQL</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Graduation</h3>
+                        <p>I graduated from CULS Prague with a Bachelor's degree in Computer Science. My studies helped me develop both technical and analytical skills. I am now ready to take on new challenges in the tech industry</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>GoTravel</h4>
+                    <p>This travel advisor application has been developed for my thesis work. I have used React JS library, Material UI for responsive design of the web application and fetched data from external APIs.</p>
+                    <div class="projects-icons">
+                        <a href="https://travel-adviser-prg.netlify.app/"><i class='bxr  bx-plane-alt'  ></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Booking Website</h4>
+                    <p>I have made this booking website with my classmate for our school assignment. This app allows users to easily navigate, book available rooms in any selected location.</p>
+                    <div class="projects-icons">
+                        <a href="https://bantu-booking.netlify.app/"><i class='bxr  bx-location'  ></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Todo List</h4>
+                    <p>I built this Todo List application using the React library to manage state and component logic. It allows users to add, delete, and track tasks in a responsive interface</p>
+                    <div class="projects-icons">
+                        <a href="https://github.com/Miras2001/TodoList"><i class='bxr  bx-list-ul'  ></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Testing</h4>
+                    <p>For this project, I used Postman to test RESTful API endpoints efficiently. I performed GET, POST, PUT, and DELETE requests to ensure backend functionality was working as expected</p>
+                    <div class="projects-icons">
+                        <a href="https://github.com/Miras2001/TodoList"><i class='bxr  bx-gear'  ></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="5968267.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+                <img src="CSS3.png" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="skill-card">
+                <img src="JavaScript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="Python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <img src="PostgresSQL.png" alt="SQL">
+                <p>PostgresSQL</p>
+            </div>
+            <div class="skill-card">
+                <img src="React.png" alt="React">
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <img src="Linux.png" alt="Linux">
+                <p>Linux</p>
+            </div>
+            <div class="skill-card">
+                <img src="Node.js.png" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <img src="Figma.png" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="skill-card">
+                <img src="Git.png" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <img src="Google Cloud.png" alt="Google">
+                <p>Google Cloud</p>
+            </div>
+            <div class="skill-card">
+                <img src="icons8-excel-48.png" alt="Excel">
+                <p>Excel</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="full_name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone Number" name="phone" required>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="message" id="" cols="30" rows="12.7" placeholder="Your Message" required></textarea>
+                <input type="Submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section> -->
+    <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form id="contact-form">
+    <div class="input-group">
+      <div class="input-box">
+        <!-- Must be "name" to match {{name}} -->
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Phone Number" name="phone" required>
+        <!-- Must be "title" to match {{title}} -->
+        <input type="text" placeholder="Subject" name="title" required>
+      </div>
+    </div>
+
+    <div class="input-group-2">
+      <!-- Must be "message" to match {{message}} -->
+      <textarea name="message" cols="30" rows="12.7" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </div>
+  </form>
+</section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/miras-alikhanov-88a2591b3/"><i class='bxr  bx-link'></i> </a>
+            <a href="https://github.com/Miras2001"><i class='bxr  bx-code-alt'  ></i> </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#home">About Me</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <p class="copyright">
+            © Alikhanov Miras | All Rights Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
